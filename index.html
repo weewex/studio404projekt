@@ -1,0 +1,637 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Studio404 webpage</title>
+	<meta name="description" content="Assignment 1.0">
+	<meta name="author" content="Klemen Pevec">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+
+<body>
+	<ul id="top-page-info">
+		<li><img src="img/icons/dostava.png">
+			HITRA DOSTAVA 2-3 DNI</li>
+		<li><img src="img/icons/placilo.png">
+			30 DNEVNI ROK ZA MENJAVO ALI PLAČILO</li>
+		<li><img src="img/icons/zaloga.png">
+			VSI ARTIKLI NA ZALOGI</li>
+		<li><img src="img/icons/dostava2.png">
+			BREZPLAČNA DOSTAVA NAD 100€</li>
+	</ul>
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-expand-md">
+		
+			<div class="navbar-header">
+			 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+					<div class="icon-bars"></div>
+					<div class="icon-bars"></div>
+					<div class="icon-bars"></div>
+					</button>
+			 		<a class="navbar-brand" href="#">
+					<img src="img/logo-sneakers.png" alt="Logo">
+					</a>
+				</div>
+				<div class="navbar-right-links float-right show-on-collapsed">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-right-icons search-button" href="#" class="search-toggle">
+						<img src="img/icons/search.png">
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-right-icons" href="#">
+						<img src="img/icons/kosarica.png">
+					</a>
+					</li>
+				</ul>
+			</div>
+				
+				<div class="collapse navbar-collapse navbar-links" id="collapseNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">NOVOSTI</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">OBUTEV</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">OBLAČILA</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="#">DODATKI</a>
+					</li> 
+					<li class="nav-item">
+						<a class="nav-link" href="#">BLOG</a>
+					</li>
+					<li class="nav-item">
+						<a class="prijava prijava-collapse" data-toggle="modal" href="#login-modal">PRIJAVA</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-right-links hide-on-collapsed">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-right-icons search-button" href="#" class="search-toggle">
+						<img src="img/icons/search.png">
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-right-icons" href="#">
+						<img src="img/icons/kosarica.png">
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="prijava" data-toggle="modal" href="#login-modal">
+						PRIJAVA
+					</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+		<div class="search-module hidden">
+			<div class="input-group mb-3">
+				<input type="text" class="form-control" placeholder="Iskanje po strani">
+				<div class="input-group-append">
+					<button class="btn" type="button" style="background-color:white">
+						<img src="img/icons/puscica-desno.png">
+					</button>
+				</div>
+			</div>
+			<div class="row categories">
+				<div class="col-sm-6">
+					<div class="row categories-section section-left">
+						<div class="col-md-12 categories-header">KATEGORIJE</div>
+						<div class="col-md-6">
+							<ul class="categories-list">
+								<li><a href="#">OBUTEV</a></li>
+								<li><a href="#">OBLAČILA</a></li>
+								<li><a href="#">DODATKI</a></li>
+								<li><a href="#">NOVOSTI</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="categories-list">
+								<li><a href="#">AIRMAX</a></li>
+								<li><a href="#">JORDAN</a></li>
+								<li><a href="#">STAN SMITH</a></li>
+								<li><a href="#">SUPERSTAR</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row categories-section section-right">
+						<div class="col-md-12 categories-header">ZNAMKE</div>
+						<div class="col-md-6">
+							<ul class="categories-list">
+								<li><a href="#">ADIDAS ORIGINALS</a></li>
+								<li><a href="#">NIKE</a></li>
+								<li><a href="#">NEW BALANCE</a></li>
+								<li><a href="#">PUMA</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="categories-list">
+								<li><a href="#">SAUCONY</a></li>
+								<li><a href="#">REEBOK CLASSICS</a></li>
+								<li><a href="#">CONVERSE</a></li>
+								<li><a href="#">NEW ERA</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="login-modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h4 class="modal-title float-left">PRIJAVA UPORABNIKA</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form id="login-form">
+						<input type="text" class="form-control mb-2" placeholder="Email naslov">
+						<input type="password" class="form-control" placeholder="Geslo">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-big" data-dismiss="modal">PRIJAVA</button>
+					<a href="#" class="text-center forgot-pswd">Pozabil sem geslo</a>
+					<div class="line"></div>
+					<button type="button" class="btn btn-big btn-white" data-dismiss="modal"	data-toggle="modal" data-target="#registration-modal">REGISTRACIJA NOVEGA UPORABNIKA</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="registration-modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h4 class="modal-title float-left">REGISTRACIJA UPORABNIKA</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form id="login-form">
+						<div class="form-group">
+							<input type="text" class="form-control mb-2" placeholder="Email naslov">
+							<input type="password" class="form-control mb-2" placeholder="Geslo">
+							<input type="password" class="form-control" placeholder="Ponovi geslo">
+						</div>
+						<div class="line"></div>
+						<div class="tabs">
+							<div class="tab-spacer"></div>
+							<div class="tab active">
+								<a href="#" id="fizicna" class="text-center">FIZIČNA OSEBA</a>
+							</div>
+							<div class="tab">
+								<a href="#" id="pravna" class="text-center">PRAVNA OSEBA</a>
+							</div>
+							<div class="tab-spacer"></div>
+						</div>
+						<div class="form-group pravna-fields hidden">
+							<input type="text" class="form-control mb-2" placeholder="Naziv podjetja">
+							<input type="text" class="form-control mb-2" placeholder="Davčna številka">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control mb-2" placeholder="Ime">
+							<input type="text" class="form-control mb-2" placeholder="Priimek">
+							<input type="text" class="form-control mb-2" placeholder="Telefon">
+							<input type="text" class="form-control mb-2" placeholder="Naslov">
+							<select class="form-control">
+								<option selected>Izberite kraj</option>
+								<option value="Nek kraj1">Nek kraj1</option>
+								<option value="Nek kraj2">Nek kraj2</option>
+								<option value="Nek kraj3">Nek kraj3</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>
+								<input type="checkbox">
+								Želim prejemati obvestila o aktualnih in akcijskih ponudbah ter novostih v spletnih ali klasičnih trgovinah Tomas sport in Sneakers.si
+							</label>
+							<label>
+								<input type="checkbox">
+								Dovoljujem uporabo podatkov za namene neposrednega trženja (remarketing, segmentacija kupcev)
+							</label>
+							<a href="#">Varstvo osebnih podatkov</a>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-big mb-2" data-dismiss="modal">POTRDI REGISTRACIJO</button>
+					
+					<button type="button" class="btn btn-big btn-white" style="margin-left: 0px" data-dismiss="modal">PRIJAVA OBSTOJEČEGA ČLANA</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="carousel mt-3 mb-3">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<div class="carousel-inner">
+					<div class="carousel-item active adjust-size">
+						<img src="img/carousel/3218044773_2404.jpg">
+					</div>
+
+					<div class="carousel-item adjust-size">
+						<img src="img/carousel/3598750797_255.jpg">
+					</div>
+
+					<div class="carousel-item adjust-size">
+						<img src="img/carousel/5630474775_6841.jpg">
+					</div>
+					<div class="carousel-item adjust-size">
+						<img src="img/carousel/5658969902_8880.jpg">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="carousel-control-left" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-right" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="row thirds-padding">
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/moskimodeli-nike.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/zenskimodeli-nike.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/kape-newera.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="col-sm-12 adjust-size">
+				<a href="#">
+					<img src="img/page/oblacila-adidas.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="row thirds-padding">
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/novosti-converse.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/novosti-newbalance.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4 third mb-3 adjust-size">
+				<a href="#">
+					<img src="img/page/novosti-asics.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="row adjust-size brands">
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-nike.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-adi.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-nb.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-asics.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-conv.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-jordan.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-reeb.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-timb.png">
+				</a>
+			</div>
+			<div class="col-xs-4 col-sm-2 col-md-1">
+				<a href="#">
+					<img src="img/brands/logo-newera.png">
+				</a>
+			</div>
+		</div>
+		<div class="row mt-3 mb-3">
+			<div class="col-sm-12 mb-3">
+				<h2 class="title">
+					VIDEO PREDSTAVITEV
+				</h2>
+			</div>
+			<div class="col-sm-12 col-md-8 video-adjust pr-md-0">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/N-zCEY803Ig?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<div class="col-sm-12 col-md-4 pl-md-0">
+				<div class="col-xs-8 col-md-12 bg-yellow">
+					<h3 class="vp-title">GEL-KAYANO TRAINER KNIT ASICS</h3>
+					<p>Moška modna in športna obutev Asics</p>
+					<p>
+						<strong>139.99€</strong>
+					</p>
+				</div>
+				<div class="col-xs-4 col-md-12 adjust-size">
+					<img src="img/video/asics-gel.png">
+					<a href="#" class="link-dark">POGLEJ SI IZDELEK</a>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="col-sm-12">
+				<div class="title text-center arrow-title">
+					<h2 class="mt-1 mb-0">MOŠKI MODELI</h2>
+					<a href="#">
+						<div class="arrow">
+							<img src="img/icons/puscica-desno.png">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-12 adjust-size">
+				<img src="img/page/moskimodeli.jpg">
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="col-sm-12">
+				<div class="title text-center arrow-title">
+					<h2 class="mt-1 mb-0">ŽENSKI MODELI</h2>
+					<a href="#">
+						<div class="arrow">
+							<img src="img/icons/puscica-desno.png">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-12 adjust-size">
+				<img src="img/page/zenskimodeli.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="margin-side">
+		<div class="title bg-yellow title-black">
+			<h2>
+				OBIŠČI NAS V
+			</h2>
+		</div>
+	</div>
+	<div class="row margin-side">
+		<div class="col-md-6">
+			<div class="carousel mt-3 mb-3">
+				<div id="store-carousel" class="carousel slide" data-ride="carousel">
+					
+					<ol class="carousel-indicators visit-indicators">
+						<li data-target="#store-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#store-carousel" data-slide-to="1"></li>
+						<li data-target="#store-carousel" data-slide-to="2"></li>
+						<li data-target="#store-carousel" data-slide-to="3"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-sm-5 adjust-size">
+									<img src="img/visit/store.jpg">
+								</div>
+								<div class="col-sm-7">
+									<h1>SNEAKERS SHOP CITYPARK</h1>
+									<p>
+										Šmartinska 152G, Ljubljana<br>
+										Trenutno odprto
+									</p>
+									<p>
+										Ponedeljek - Petek: 9:00 - 21:00<br>
+										Sobota: 8:00 - 21:00<br>
+										Nedelja: 9:00 - 15:00
+									</p>
+									<p>
+										<strong>01/1234 567</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-sm-5 adjust-size">
+									<img src="img/visit/store.jpg">
+								</div>
+								<div class="col-sm-7">
+									<h1>SNEAKERS SHOP CITYPARK</h1>
+									<p>
+										Šmartinska 152G, Ljubljana<br>
+										Trenutno odprto
+									</p>
+									<p>
+										Ponedeljek - Petek: 9:00 - 21:00<br>
+										Sobota: 8:00 - 21:00<br>
+										Nedelja: 9:00 - 15:00
+									</p>
+									<p>
+										<strong>01/1234 567</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-sm-5 adjust-size">
+									<img src="img/visit/store.jpg">
+								</div>
+								<div class="col-sm-7">
+									<h1>SNEAKERS SHOP CITYPARK</h1>
+									<p>
+										Šmartinska 152G, Ljubljana<br>
+										Trenutno odprto
+									</p>
+									<p>
+										Ponedeljek - Petek: 9:00 - 21:00<br>
+										Sobota: 8:00 - 21:00<br>
+										Nedelja: 9:00 - 15:00
+									</p>
+									<p>
+										<strong>01/1234 567</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-sm-5 adjust-size">
+									<img src="img/visit/store.jpg">
+								</div>
+								<div class="col-sm-7">
+									<h1>SNEAKERS SHOP CITYPARK</h1>
+									<p>
+										Šmartinska 152G, Ljubljana<br>
+										Trenutno odprto
+									</p>
+									<p>
+										Ponedeljek - Petek: 9:00 - 21:00<br>
+										Sobota: 8:00 - 21:00<br>
+										Nedelja: 9:00 - 15:00
+									</p>
+									<p>
+										<strong>01/1234 567</strong>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2 social adjust-size">
+			<h1 class="mt-3">SLEDI NAM</h1>
+			<a href="#">
+				<img src="img/visit/facebook.svg">
+			</a>
+			<a href="#">
+				<img src="img/visit/instagram.svg">
+			</a>
+			<a href="#">
+				<img src="img/visit/youtube.svg">
+			</a>
+		</div>
+		<div class="col-md-4">
+			<h1 class="mt-3">SNEAKERS BLOG</h1>
+			<p class="bold">
+				adidas Deerupt, najbolj vpadljivi copati letošnjega leta
+			</p>
+			<p>
+				Nov adidasov model Deerupt predstavlja sodobno nadaljevanje prvinske dediščine v radikalno sveži podobi. Sodobna oblika, ki je minimalistična in drzna hkrati, navdih črpa iz arhiva kultnih adidask ter se udejanja v zamreženi podobi.
+			</p>
+			<a href="#" class="btn-big btn-white text-center btn-blog">PREBERI</a>
+		</div>
+	</div>
+	<div class="margin-side mt-5">
+		<div class="newsletter row">
+			<div class="col-md-4">
+				<h1 class="mt-3">PRIJAVA NA E-NOVICE</h1>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group mt-3">
+					<input class="form-control" placeholder="Tvoj e-mail naslov">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<a href="#" class="btn-big btn-white text-center btn-newsletter mt-3">PRIJAVI SE</a>
+			</div>
+		</div>
+	</div>
+	<div class="margin-side mt-3">
+		<div class="row footer">
+			<div class="col-md-3">
+				<h2 class="title footer-title mt-md-5">NAKUP</h2>
+				<div class="footer-expand" data-target="#nakupMenu">
+					<img src="img/icons/x.png">
+					<img src="img/icons/+.png" class="hidden">
+				</div>
+
+				<div class="hidden-sm" id="nakupMenu">
+					<ul class="footer-links">
+						<li><a href="#">Moj profil</a></li>
+						<li><a href="#">Pomoč pri nakupu</a></li>
+						<li><a href="#">Svetovalec</a></li>
+						<li><a href="#">Menjava in reklamacije</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<h2 class="title footer-title mt-md-5">INFORMACIJE</h2>
+				<div class="footer-expand" data-target="#informacijeMenu">
+					<img src="img/icons/x.png">
+					<img src="img/icons/+.png" class="hidden">
+				</div>
+				<div class="hidden-sm" id="informacijeMenu">
+					<ul class="footer-links">
+						<li><a href="#">Moj profil</a></li>
+						<li><a href="#">Pomoč pri nakupu</a></li>
+						<li><a href="#">Svetovalec</a></li>
+						<li><a href="#">Menjava in reklamacije</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<h2 class="title footer-title mt-md-5">IMPRESSUM</h2>
+				<div class="footer-expand" data-target="#impressumMenu">
+					<img src="img/icons/x.png">
+					<img src="img/icons/+.png" class="hidden">
+				</div>
+				<div class="hidden-sm" id="impressumMenu">
+					<ul class="footer-links">
+						<li><a href="#">Moj profil</a></li>
+						<li><a href="#">Pomoč pri nakupu</a></li>
+						<li><a href="#">Svetovalec</a></li>
+						<li><a href="#">Menjava in reklamacije</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="margin-side text-center">
+		Vsebina spletnih strani, fotografije, besedila in grafike so last Tomas Sport 2 d.o.o. in so zaščiteni po zakonu o avtorskih pravicah. Nepooblaščena uporaba brez pisnega soglasja je prepovedana.
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-scripta.js"></script>
+		
+</body>
+</html>
